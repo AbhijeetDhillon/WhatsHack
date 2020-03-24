@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.blueskyapps.statusdownloader.com.asdtechlabs.statusdownloader.MainActivity">
+
+
+    <item
+        android:id="@+id/selectAll"
+        android:orderInCategory="2"
+        android:title="@string/selectAll"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/deselectAll"
+        android:orderInCategory="2"
+        android:title="@string/deselectAll"
+        app:showAsAction="never" />
+
+</menu>

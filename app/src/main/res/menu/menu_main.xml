@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.blueskyapps.statusdownloader.com.asdtechlabs.statusdownloader.MainActivity">
+
+    <item
+        android:id="@+id/itemSettings"
+        android:icon="@drawable/ic_help"
+        android:title="Help"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/itemRefresh"
+        android:icon="@drawable/ic_refresh"
+        android:title="Refresh"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/contactUS"
+        android:title="Contact Us" />
+
+</menu>

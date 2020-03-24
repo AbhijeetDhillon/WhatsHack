@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "493247893388",
+    "firebase_url": "https://statusdownloader.firebaseio.com",
+    "project_id": "statusdownloader",
+    "storage_bucket": "statusdownloader.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493247893388:android:80f94623b358b6bd",
+        "android_client_info": {
+          "package_name": "com.blueskyapps.statusdownloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493247893388-8jd4e43gnop6rv5r1nnc3hitknmmgriv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blueskyapps.statusdownloader",
+            "certificate_hash": "1c0ab1491029eea992df77acfe9c1514a10c3bb6"
+          }
+        },
+        {
+          "client_id": "493247893388-3lgmi5el3d1b88ui4isd046alsura0r2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1pYn31p9qgV88O8hAUsKN8Q0zoEMZJAY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493247893388-3lgmi5el3d1b88ui4isd046alsura0r2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asdtechlabs.whatshack">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.asdtechlabs.whatshack.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9360545687799461~8234305670" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <activity
+            android:name="com.asdtechlabs.whatshack.Status"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.asdtechlabs.whatshack.FullScreenPreview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asdtechlabs.whatshack.SelectionActivity"
+            android:label="@string/selectItems"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.asdtechlabs.whatshack.SettingsActivity"
+            android:label="@string/settings"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.asdtechlabs.whatshack.MyNotification"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.asdtechlabs.whatshack.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path" />
+            <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-1909122143192244~4427028817" />
+        </provider>
+
+        <activity
+            android:name="com.asdtechlabs.whatshack.Splash"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.asdtechlabs.whatshack.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.asdtechlabs.whatshack.UnseenMessages" />
+        <activity android:name="com.asdtechlabs.whatshack.DeletedMessages" />
+        <activity android:name="com.asdtechlabs.whatshack.UnseenMessageChat" />
+        <activity android:name="com.asdtechlabs.whatshack.PrivacyPolicy"></activity>
+    </application>
+
+</manifest>
